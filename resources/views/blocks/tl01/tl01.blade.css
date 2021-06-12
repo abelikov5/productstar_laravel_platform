@@ -1,0 +1,27 @@
+.title h1 {
+    font-size: 78px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+.wrap_title span {
+    font-size: 24px;
+}
+.wrap_title {
+    background-color: var(--menu-color);
+    color: #fff;
+    width: 100%;
+    min-height: 260px;
+    /* position: relative; */
+}
+.title {
+    padding: 100px 0 0 100px;
+}
+.dv12 {
+    height: 8vw;
+    fill: var(--menu-color);
+    width: 100%;
+    transform: rotate(180deg);
+    transform: scale(1, -1);
+    top: -1px;
+    position: relative;
+}

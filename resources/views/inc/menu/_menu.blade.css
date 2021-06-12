@@ -1,0 +1,110 @@
+.main_menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: var(--menu-color);
+    width: 50px;
+    z-index: 99;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+.catalog_menu {
+    position: fixed;
+    left: -270px;
+    top: 0;
+    height: 100vh;
+    background-color: #fff;
+    width: 270px;
+    transition: 0.4s!important;
+    z-index: 10;
+}
+
+.dark_side_menu {
+    position: fixed;
+    /* left: -250px; */
+    top: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transition: 0.4s!important;
+    z-index: 2;
+}
+.cat_menu_active {
+    left: 0;
+    top: 0;
+    transition: 0.4s!important;
+}
+.div_line_wrap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    left: 12px;
+    width: 28px;
+    height: 28px;
+}
+.div_line {
+    transition: .3s;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    margin-bottom: 7px;
+}
+
+/* стили крестик при наведении */
+.div_line_wrap:hover div:nth-child(1) {
+    transform: translate(0px, 8px) rotate(45deg);
+}
+.div_line_wrap:hover div:nth-child(2) {
+    transform: scale(0);
+}
+.div_line_wrap:hover div:nth-child(3) {
+    transform: translate(0px, -8px) rotate(-45deg);
+}
+.cross_ui_top {
+    transform: translate(0px, 8px) rotate(45deg);
+}
+.cross_ui_middle {
+    transform: scale(0);
+}
+.cross_ui_botton {
+    transform: translate(0px, -8px) rotate(-45deg);
+}
+.wrap_logo {
+    width: 129px;
+    height: 129px;
+    left: 70px;
+    top: 15px;
+    /*position: absolute;*/
+    margin: 20px 20px 40px 60px;
+}
+.wrap_logo img {
+    width: 100%;
+}
+.wrap_menu {
+    position: relative;
+    width: 255px;
+    height: 100vh;
+    left: 30px;
+    /*top: 120px;*/
+    /* width: 230px; */
+    overflow-y: scroll;
+}
+.wrap_menu li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1;
+}
+.wrap_menu li a {
+    text-decoration: none;
+}
+.wrap_logo_img {
+    background: url('../../../img/logo.png');
+    width: 129px;
+    height: 126px;
+}
