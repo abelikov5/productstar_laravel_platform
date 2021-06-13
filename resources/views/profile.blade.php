@@ -1,3 +1,4 @@
 <h1>Profile Page</h1>
 
-<p>Hello, {{auth()->user()->name}}</p>
+<p>User name: {{auth()->user()->name}}</p>
+<p>User email: {{auth()->user()->email}}</p>
